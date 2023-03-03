@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.login_screen{
+  background-color: #78adc2;
+  height: 100vh;
+  width: 100vw; 
+  display: flex;
+
+}
+.login_leftbox{
+  height: 100vh;
+  width: 50vw;
+  background-color:#5db4d6;
+
+}
+.login_rightbox{
+  height: 100vh;
+  width: 50vw;
+  background-color: #5f7e8a;
+  
+
+}
+.login_box{
+  height: 28rem;
+  width: 350px;
+  background-color: green;
+
+  margin: auto;
+ padding: 20px;
+ padding-left: 60px;
+  margin-top: 110px;
+  border-radius: 32px;
+  font-size: larger;
+}
+.field{
+  height: 50px;
+  width:90%;
+  font-size:1.2rem;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.login_buttom{
+  height: 4rem;
+  width: 7rem;
+  border-radius: 22px;
+  background-color: #5f7e8a;
+  cursor: pointer;
+}
+.button_logout{
+  height: 3rem;
+  width: 5rem;
+  font-size: larger;
+  border-radius: 22px;
+  cursor: pointer;
+
+}
+.button_logout:hover{
+  background-color: #5f7e8a;
+}
+.user_screen{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(155, 189, 104);
+}
+
+.user_nav{
+ 
+  display: flex; gap: 20px;
+  height: 15vh;
+  width: 100vw;
+  background-color: yellowgreen;
+ 
+  align-items: center;
+  justify-content: center;
+  }
+.user_body{
+  height:85vh;
+  width: 100vw;
+  background-color: rgb(175, 134, 134);
+  display: flex;
+
+
+
+}
+.user_left{
+  height: 85vh;
+  width:25vw;
+  background-color: green; 
+  padding: 7px;
+
+}
+.user_left_box{
+  height: 76vh;
+  
+  width: 23vw;
+  background-color: red;
+
+ 
+}
+li{
+  display: flex;
+  gap: 1rem;
+  background-color: greenyellow;
+  cursor: pointer;
+  height: 3.5rem;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+  
+  
+  
+}
+.name_list{
+  font-size: x-large; 
+ 
+  margin-bottom:7px;
+
+
+ 
+
+  
+}
+.profile{
+  height: 3rem;
+  width: 3rem;
+  background-color:blue;
+  border-radius: 50%; 
+  
+}
+.profile img{
+  height: 3rem;
+  width: 3rem;
+  
+  border-radius: 50%;
+
+}
+li:hover{
+  background-color: #5f7e8a;
+  
+}
+.user_mid{
+  height: 85vh;
+  width:49vw;
+  background-color: rgb(125, 172, 15);
+  overflow-y: scroll;
+  margin-left: 5px;
+
+}
+
+
+.message_box{
+  height: 32rem;
+  width:25rem; 
+  background-color: bisque;
+margin-top: 2.9rem;
+margin-left: 7rem;
+display: flex;
+flex-direction: column;
+
+
+
+}
+.message_head{
+  height: 5rem;
+  width:100%;
+  background-color:#5f7e8a ;
+  padding: 0.5rem;
+  
+
+ }
+ .head_body{
+  height: 4rem;
+  width: 24rem;
+  background-color: aliceblue;
+  font-size: xx-large;
+  display: flex;
+ }
+ .message_profile{
+  height:4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: brown;
+  }
+  .message_profile img{
+    height:4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+ .message_body{
+  margin-top: 8px;
+  height: 23.5rem;
+  width: 104%;
+  background-color: #ce6816;
+  overflow-y: scroll;
+ 
+
+margin-left: -0.5rem;
+margin-bottom: 1px;
+
+
+ }
+ .message_left{
+  display: flex;
+  height:auto;
+  width:15rem;
+  background-color: blanchedalmond;
+  gap: 5px;
+  padding: 7px;
+  margin-bottom: 9px;
+ }
+ .other{
+  height: max-content;
+  
+  margin-top: 0.9rem;
+  width: fit-content;
+  padding: 7px;
+  
+ 
+  background-color: red;
+ 
+ 
+ }
+ .message_right{
+  display: flex; gap: 5px;
+  margin-left: 7rem; 
+  padding: 7px;
+  
+  height: auto;
+  width: fit-content;
+  background-color: blue;
+
+ }
+ .me{
+  margin-top: 0.9rem;
+  height: auto;
+  padding: 7px;
+  
+  background-color: green;
+  border-radius: 13px;
+
+  
+ }
+ .message_footer{
+  height: 3.3rem;
+  width:24.2rem;
+  margin-left: -0.3rem;
+  padding: 2px;
+  background-color: red;
+ }
+.user_right{
+  height: 85vh;
+  width:25vw;
+  background-color: rgb(15, 101, 172);
+margin-left: 10px;
+gap: ;
+ }
+ .input{
+  height: 3rem;
+  width: 17rem;
+  border-radius: 13px;
+  padding: 1rem;
+  margin-right: 1rem;
+ }
+.user_right_box{
+  height: 80vh;
+  width: 20vw;
+  background-color: aqua;
+ margin-left: 26px;
+ margin-top: 17px;
+ 
+
+  
+
+}
+.profile_circle{
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  margin: auto;
+  
+  background-color:rgb(66, 32, 32);
+  
+}
+.profile_circle img{
+ 
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+}
+h2{
+  
+  text-align: center;
+}
