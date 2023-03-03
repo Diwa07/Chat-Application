@@ -95,11 +95,17 @@
 }
 .user_left_box{
   height: 76vh;
-  
+ overflow: scroll;
   width: 23vw;
   background-color: red;
-
- 
+  position: fixed;
+}
+.user_left_box::-webkit-scrollbar {
+  display: none;
+}
+.user_left_box {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 li{
   display: flex;
@@ -206,7 +212,7 @@ margin-bottom: 1px;
  .message_left{
   display: flex;
   height:auto;
-  width:15rem;
+  width:17rem;
   background-color: blanchedalmond;
   gap: 5px;
   padding: 7px;
@@ -218,7 +224,7 @@ margin-bottom: 1px;
   margin-top: 0.9rem;
   width: fit-content;
   padding: 7px;
-  
+  border-radius: 13px;
  
   background-color: red;
  
@@ -232,6 +238,7 @@ margin-bottom: 1px;
   height: auto;
   width: fit-content;
   background-color: blue;
+  margin-bottom: 9px;
 
  }
  .me{
@@ -256,7 +263,7 @@ margin-bottom: 1px;
   width:25vw;
   background-color: rgb(15, 101, 172);
 margin-left: 10px;
-gap: ;
+
  }
  .input{
   height: 3rem;
