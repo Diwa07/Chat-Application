@@ -67,6 +67,7 @@ function UserDashboard() {
   
                 </div>
            <div className='message_body'> 
+
            <div className='message_left'> 
                 <div className='profile'> <img src={img} alt="Logo" /> </div>
             <div className='other'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse porro expedita, nostrum voluptatum temporibus, consequuntur animi eum magnam suscipit officiis error natus, iusto exercitationem soluta est molestias nam illum? Voluptatum! hello Lorem ipsum dolor sit amet consectetur 
@@ -76,43 +77,25 @@ function UserDashboard() {
          
                   </div>
                   <div className='message_right'>
-                  <div className='profile'> <img src={img} alt="Logo" /> </div>
+                  
                   <div className='me'>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae ipsa aspernatur consectetur quisquam illo. Molestias quas harum incidunt praesentium natus? Delectus, nisi libero corporis eius illum sequi ad deserunt. his  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corrupti error 
                   qui obcaecati sapiente at ut excepturi quos! Sunt veniam, 
                   ipsum assumenda nam voluptas dignissimos totam eius dolores ea soluta! </div> 
+                  <div className='profile'> <img src={img} alt="Logo" /> </div>
                   </div> 
-                  
+
 
                   <div className='message_left'> 
                 <div className='profile'> <img src={img} alt="Logo" /> </div>
-            <div className='other'> hello Lorem ipsum dolor sit amet consectetur 
+            <div className='other'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse porro expedita, nostrum voluptatum temporibus, consequuntur animi eum magnam suscipit officiis error natus, iusto exercitationem soluta est molestias nam illum? Voluptatum! hello Lorem ipsum dolor sit amet consectetur 
            adipisicing elit. Necessitatibus ab earum fuga, illo laudantium exercitationem dolorum perferendis totam sunt 
            recusandae ipsa inventore! Doloribus sequi soluta ea perferendis inventore aliquam dicta.
              </div>
          
                   </div>
-                  <div className='message_right'>
-                  <div className='me'>    his  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corrupti error 
-                  qui obcaecati sapiente at ut excepturi quos! Sunt veniam, 
-                  ipsum assumenda nam voluptas dignissimos totam eius dolores ea soluta! </div> 
-                  </div> 
+                 
 
-                  <div className='message_left'> 
-                <div className='profile'> <img src={img} alt="Logo" /> </div>
-            <div className='other'> hello Lorem ipsum dolor sit amet consectetur 
-           adipisicing elit. Necessitatibus ab earum fuga, illo laudantium exercitationem dolorum perferendis totam sunt 
-           recusandae ipsa inventore! Doloribus sequi soluta ea perferendis inventore aliquam dicta.
-             </div>
-         
-                  </div>
-                  <div className='message_right'>
-                  <div className='me'>    his  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corrupti error 
-                  qui obcaecati sapiente at ut excepturi quos! Sunt veniam, 
-                  ipsum assumenda nam voluptas dignissimos totam eius dolores ea soluta! </div> 
-                  </div> 
-                  
-               
-  
+                 
   
   
   
