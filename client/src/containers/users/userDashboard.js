@@ -9,9 +9,10 @@ function UserDashboard() {
   const dispatch = useDispatch()
   const [userDetails, setUserDetails] = useState([])
   const [show, setshow] = useState(false)
+  const [message, setMessage] = useState('')
   const [selectedUserDetails, setSelectedUserDetails] = useState({})
-  const { name } = useSelector(state => state.user)
-
+  const { name,email ,_id,address} = useSelector(state => state.user)
+  
  
   const fetchUser = () => {
 
@@ -21,13 +22,21 @@ function UserDashboard() {
       setUserDetails(response.data.userDetails)
     });
   }
+  const  triggerMessageSend =async()=>{
+    await axios.post("http://localhost:3005/message",{senderId:_id,receiverId:selectedUserDetails,message:message})
+    
+    // console.log(_id,selectedUserDetails,message)
+
+  }
   useEffect(() => {
     fetchUser()
   }, [])
   const triggerLogout = () => {
     dispatch(logoutResetDetails())
     navigate('/')
-
+   
+   
+    
   }
 
   return (
@@ -102,8 +111,8 @@ function UserDashboard() {
                 </div>
                 <div className='message_footer'>
   
-                  <input placeholder='write something' className='input' />
-                  <button className='button_logout'>Send</button>
+                  <input onKeyUp={(e)=>setMessage(e.target.value)} placeholder='write something' className='input' />
+                  <button onClick={()=> triggerMessageSend()} className='button_logout'>Send</button>
   
                 </div>
   
@@ -123,6 +132,10 @@ function UserDashboard() {
             </div>
             Name:
             <h2>  {name}</h2>
+            Email:
+            <h4>  {email}</h4>
+            <h4>  {address}</h4>
+         
 
           </div>
 
