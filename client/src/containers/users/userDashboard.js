@@ -4,6 +4,9 @@ import img from "../../images/avatar.png"
 import { useSelector, useDispatch } from 'react-redux'
 import { logoutResetDetails } from '../../redux/actions/userAction';
 import axios from "axios";
+import io from 'socket.io-client';
+// const socket = io();different domain vayekole talako line use gareko
+const socket = io("http://localhost:3005");
 function UserDashboard() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -26,17 +29,18 @@ function UserDashboard() {
     await axios.post("http://localhost:3005/message",{senderId:_id,receiverId:selectedUserDetails,message:message})
     
     // console.log(_id,selectedUserDetails,message)
+ 
 
   }
   useEffect(() => {
-    fetchUser()
+    fetchUser();
+    socket.on('connect', () => {
+    });
   }, [])
   const triggerLogout = () => {
     dispatch(logoutResetDetails())
     navigate('/')
-   
-   
-    
+  
   }
 
   return (
@@ -112,8 +116,10 @@ function UserDashboard() {
                 </div>
                 <div className='message_footer'>
   
-                  <input onKeyUp={(e)=>setMessage(e.target.value)} placeholder='write something' className='input' />
-                  <button onClick={()=> triggerMessageSend()} className='button_logout'>Send</button>
+                  <input onKeyUp={(e)=>setMessage(e.target.value)} placeholder='write something' onKeyPress={(event)=>{
+                    event.key === "Enter"&& triggerMessageSend();
+                  }} className='input' />
+                  <button onClick={()=> triggerMessageSend() } className='button_logout'>  Send &#9658;</button>
   
                 </div>
   
