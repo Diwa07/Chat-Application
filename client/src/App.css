@@ -183,7 +183,7 @@ flex-direction: column;
   width: 24rem;
   background-color: aliceblue;
   font-size: xx-large;
-  display: flex;
+  display: flex; 
  }
  .message_profile{
   height:4rem;
@@ -195,6 +195,13 @@ flex-direction: column;
     height:4rem;
     width: 4rem;
     border-radius: 50%;
+  }
+  .close{
+    color: red;
+    margin-left: 1rem;
+ 
+    cursor: pointer;
+    font-size: larger;
   }
  .message_body{
   margin-top: 8px;

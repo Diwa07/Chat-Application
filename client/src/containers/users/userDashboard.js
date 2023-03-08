@@ -72,7 +72,8 @@ function UserDashboard() {
                   <div className='message_profile'>
                     <img src={img} alt="Logo" /> 
                   </div>
-                  {selectedUserDetails.name} 
+                  {selectedUserDetails.name}  
+                  <button  className='close' onClick={()=>setshow(!show)}>close</button>
   
                 </div>
            <div className='message_body'> 
@@ -87,7 +88,7 @@ function UserDashboard() {
                   </div>
                   <div className='message_right'>
                   
-                  <div className='me'>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae ipsa aspernatur consectetur quisquam illo. Molestias quas harum incidunt praesentium natus? Delectus, nisi libero corporis eius illum sequi ad deserunt. his  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corrupti error 
+                  <div className='me'>   hi Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae ipsa aspernatur consectetur quisquam illo. Molestias quas harum incidunt praesentium natus? Delectus, nisi libero corporis eius illum sequi ad deserunt. his  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corrupti error 
                   qui obcaecati sapiente at ut excepturi quos! Sunt veniam, 
                   ipsum assumenda nam voluptas dignissimos totam eius dolores ea soluta! </div> 
                   <div className='profile'> <img src={img} alt="Logo" /> </div>
